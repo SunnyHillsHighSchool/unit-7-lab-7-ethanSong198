@@ -24,6 +24,20 @@ public class Main
 		out.println("\n\n");		
 				
 		//add more test cases
+    String[] wrdsTwo = "unga wunga dunga sunga david lee see me".split(" ");
+		Words testTwo = new Words( wrdsTwo );
+		out.println(testTwo);
+		out.println("word with 2 vowels = "+testTwo.countWordsWithXVowels(2));
+		out.println("word with 3 vowels = "+testTwo.countWordsWithXVowels(3));
+		out.println("word with 4 vowels = "+testTwo.countWordsWithXVowels(4));
+		out.println("word with 2 chars = "+testTwo.countWordsWithXChars(2));
+		out.println("word with 3 chars = "+testTwo.countWordsWithXChars(3));		
+		out.println("word with 4 chars = "+testTwo.countWordsWithXChars(4));
+		out.println("word with 5 chars = "+testTwo.countWordsWithXChars(5));
+		int vowelsRemovedTwo = testTwo.removeWordsWithXChars(3);
+		out.println("\nafter removing words with 3 chars \n" + testTwo);
+		out.println("\nnumber of vowels in the words removed == " + vowelsRemovedTwo);
+		out.println("\n\n");		
 	
 	}
 }
